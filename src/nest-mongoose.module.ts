@@ -1,9 +1,10 @@
-import { DynamicModule, Module, Provider } from '@nestjs/common';
+import { DynamicModule, Global, Module, Provider } from '@nestjs/common';
 import { NestMongooseOptions } from './interfaces/nest-mongoose-options.interface';
 import { NEST_MONGOOSE_CONNECTION, NEST_MONGOOSE_OPTIONS } from './nest-mongoose.constants';
 import { NestMongooseConnectionFactory } from './nest-mongoose-connection.factory';
 import { getProviderByTypegooseClass } from './nest-mongoose.util';
 
+@Global()
 @Module({})
 export class NestMongooseModule {
   public static forRoot(options: NestMongooseOptions): DynamicModule {
