@@ -40,13 +40,17 @@
   },
   "homepage": "https://github.com/huahaofeng/nest-mongoose#readme",
   "dependencies": {
+    "log4js": "^6.3.0"
+  },
+  "peerDependencies": {
     "@nestjs/common": "^7.0.0",
     "@typegoose/typegoose": "^7.4.1",
-    "log4js": "^6.3.0",
     "mongoose": "^5.10.8",
     "mongoose-paginate": "^5.0.3"
   },
   "devDependencies": {
+    "@nestjs/common": "^7.0.0",
+    "@typegoose/typegoose": "^7.4.1",
     "@types/jest": "25.1.4",
     "@types/mongoose": "^5.7.36",
     "@types/mongoose-paginate": "^5.0.8",
@@ -58,6 +62,8 @@
     "eslint-config-prettier": "^6.10.0",
     "eslint-plugin-import": "^2.20.1",
     "jest": "^25.1.0",
+    "mongoose": "^5.10.8",
+    "mongoose-paginate": "^5.0.3",
     "prettier": "^1.19.1",
     "supertest": "^4.0.2",
     "ts-jest": "25.2.1",
